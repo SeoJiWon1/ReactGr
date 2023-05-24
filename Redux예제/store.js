@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, createSlice } from '@reduxjs/toolkit';
 
 createSlice({
     name: 'state이름~',
