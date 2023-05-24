@@ -1,1 +1,1 @@
-# ReactGr
+# React 기본 및 예제 코드를 정리
