@@ -1,8 +1,10 @@
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 
 let user = createSlice({
-    name: 'user',
-    initialState : 'kim'
+    name: 'user', 
+    //name : state 이름 
+    initialState : 'kim'  
+    // initialState : 값
                     
 })
 
