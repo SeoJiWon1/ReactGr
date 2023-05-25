@@ -30,3 +30,32 @@ export default configureStore({
         cart : cart.reducer
     }
 })
+
+
+
+// 그 후에 reducers에 있는 함수를 사용하게 된다면
+
+import { useDispatch, useSelector } from "react-redux"
+import { changeName, changeAge } from "../store/userSlice"
+import {increase} from '../store'
+// reducers 함수 import 
+
+
+function Cart() {
+    let state = useSelector((state) => { return state})
+    let dispatch = useDispatch()
+    // dispatch 정의 
+
+    return(
+            <button onClick = {() => {
+                console.log(state.cart[i].id)
+                dispatch(increase(i))
+                }}>+
+            </button>
+            // dispatch(state변경함수())로 사용 !!
+    )
+
+}
+
+export default Cart;
+
